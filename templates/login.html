@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Cantina Esnupi - Login</title>
+    <title>A Cantina Esnupi</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-<body>
+<body class="loginBody">
     <div class="login-container">
         <div class="login-box">
             <div class="logo">
-                <img src="/path-to-your-logo.png" alt="Logo">
-                <h1>A Cantina Esnupi</h1>
-                <p>Receitas de qualidade feitas com muito amor</p>
+                <img src="../static/img/imagem_2024-09-28_215205816-removebg-preview.png" alt="Logo">
+                <h1>A <br>
+                    Cantina <br>
+                    Esnupi</h1>
+                <p>RECEITAS DE QUALIDADE FEITAS COM MUITO AMOR</p>
             </div>
             <form method="POST" action="/">
                 <label for="email">E-mail:</label>
@@ -23,9 +25,16 @@
 
                 <button type="submit">Entrar</button>
             </form>
-            <p>Não tem uma conta? <a href="#">Registre-se</a></p>
-            <p><a href="#">Entrar sem uma conta</a></p>
+            <p>Não tem uma conta? <a href="/cadastro">Registre-se</a></p>
+            <p><a href="/sucesso">Entrar sem uma conta</a></p>
         </div>
     </div>
+
+    <div class="footer">
+        <footer>
+
+        </footer>
+    </div>
+
 </body>
 </html>

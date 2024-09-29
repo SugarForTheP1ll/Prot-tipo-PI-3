@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Cantina Esnupi - Cadastro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="cadastroBody">
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="../static/img/imagem_2024-09-28_215205816-removebg-preview.png" alt="Logo">
+                <h1>A <br>
+                    Cantina <br>
+                    Esnupi</h1>
+                <p>RECEITAS DE QUALIDADE FEITAS COM MUITO AMOR</p>
+            </div>
+            <form method="POST" action="/cadastro">
+                <!-- Campo de Nome -->
+                <input type="text" id="nome" name="nome" placeholder="Nome:" required>
+                
+                <!-- Campo de E-mail -->
+                <input type="email" id="email" name="email" placeholder="E-mail:" required>
+
+                <!-- Campo de Senha -->
+                <input type="password" id="senha" name="senha" placeholder="Senha:" required>
+
+                <!-- Campo para confirmar a Senha -->
+                <input type="password" id="confirma_senha" name="confirma_senha" placeholder="Confirme sua senha:" required>
+
+                <!-- Botão de Cadastro -->
+                <button type="submit" class="cdbutton">Cadastrar</button>
+            </form>
+            <p>Já tem uma conta? <a href="/#">Entre aqui</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Cantina Esnupi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/img/imagem_2024-09-29_160851802-removebg-preview.png" alt="Logo">
+            <h1>A <br>
+                Cantina <br>
+                Esnupi</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Receitas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="logo2">
+                <img src="../static/img/imagem_2024-09-29_160851802-removebg-preview.png" alt="Logo">
+                <h2>A <br>
+                    Cantina <br>
+                    Esnupi</h2>
+                <p>RECEITAS DE QUALIDADE FEITAS COM MUITO AMOR</p>
+            </div>
+           
+        </section>
+
+        <section class="receitas">
+            <h2>Receitas de Hoje</h2>
+            <div class="receita-container">
+                <div class="receita">
+                    <img src="{{ url_for('static', filename='images/receita1.jpg') }}" alt="Receita 1">
+                    <p>Espaguete Carbonara</p>
+                </div>
+                <div class="receita">
+                    <img src="{{ url_for('static', filename='images/receita2.jpg') }}" alt="Receita 2">
+                    <p>Yakissoba de Frango</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 A Cantina Esnupi - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
