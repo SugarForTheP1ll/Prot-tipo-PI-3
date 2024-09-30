@@ -28,7 +28,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f1ebe5;
     color: #333;
     padding-top: 120px;
 }
@@ -97,14 +97,12 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #eee;
+    background-color: #b3ca84;
     padding: 20px;
-    border-radius: 10px;
 }
 
 .banner img {
     width: 50%;
-    border-radius: 5px;
 }
 
 .receita-info {

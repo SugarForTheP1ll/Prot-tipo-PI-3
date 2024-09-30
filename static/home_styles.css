@@ -85,7 +85,7 @@ header nav ul li a:hover {
 .logo2 {
     position: absolute;
     color: white;
-    background: rgba(24, 129, 74, 0.5);
+    background: rgba(118, 157, 100, 0.5);
     padding: 30px;
     border-radius: 10px;
     z-index: 2;
@@ -113,8 +113,9 @@ header nav ul li a:hover {
 .receitas {
     text-align: center;
     padding: 60px 50px;
-    background-color: #f8f8f8;
+    background-color: #f1ebe5;
 }
+
 
 .receitas h2 {
     font-size: 36px;
