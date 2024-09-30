@@ -24,13 +24,12 @@
     box-sizing: border-box;
 }
 
-/* Estilos para o cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
     top: 0;
@@ -39,14 +38,14 @@ header {
 
 header .logo {
     display: flex;
-    align-items: center; /* Alinha a logo e o h1 verticalmente */
+    align-items: center;
 }
 
 header .logo h1 {
     font-family: 'Reborn', sans-serif;
     font-size: 15px;
     color: #e3e3e3;
-    margin-left: 10px; /* Adiciona um pequeno espaço entre a logo e o título */
+    margin-left: 10px; 
 }
 
 header .logo img {
@@ -57,6 +56,7 @@ header nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
+    font-family: 'Hero-Regular', sans-serif;
 }
 
 header nav ul li a {
@@ -67,10 +67,10 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #769d64; /* Cor de hover */
+    color: #769d64; 
 }
 
-/* Estilos para o banner */
+
 .banner {
     position: relative;
     width: 100%;
@@ -85,7 +85,7 @@ header nav ul li a:hover {
 .logo2 {
     position: absolute;
     color: white;
-    background: rgba(24, 129, 74, 0.5); /* Fundo escuro semi-transparente */
+    background: rgba(24, 129, 74, 0.5);
     padding: 30px;
     border-radius: 10px;
     z-index: 2;
@@ -110,7 +110,6 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Estilos para a seção de receitas */
 .receitas {
     text-align: center;
     padding: 60px 50px;
@@ -120,7 +119,8 @@ header nav ul li a:hover {
 .receitas h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    font-family: 'Hero-Bold', sans-serif;
+    font-family: 'Reborn', sans-serif;
+    text-align: left;
 }
 
 .receita-container {
@@ -135,19 +135,30 @@ header nav ul li a:hover {
 }
 
 .receita img {
-    width: 100%;
-    height: 200px;
+    width: 180%;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
+    margin-right: 200px;
+    
 }
 
-.receita p {
-    font-family: 'Hero-Regular', sans-serif;
+.receita a {
+    font-family: 'Reborn', sans-serif;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 32px;
+    text-align: left;
+    text-decoration: none;
+    transition: 2s;
+    color: black;
 }
 
-/* Estilos para o rodapé */
+.receita a:hover{
+    text-align: left;
+    color: #28a745;
+    text-decoration: none;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -163,7 +174,6 @@ footer p {
     font-size: 14px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .banner-text h2 {
         font-size: 32px;

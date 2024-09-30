@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esnupi alla Carbonara</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='receitas_styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/img/imagem_2024-09-29_160851802-removebg-preview.png" alt="Logo">
+            <h1>A <br> Cantina <br> Esnupi</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('login') }}">Início</a></li>
+                <li><a href="#">Receitas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="receita-detalhes">
+        <div class="banner">
+            <img src="../static/img/cb5051204f4a4525c8b013c16418ae2904e737b7.avif" alt="Imagem da Receita">
+            <div class="receita-info">
+                <h2>Esnupi alla Carbonara</h2>
+                <p><i class="far fa-clock"></i> 20 min</p> <br>
+                <p>Carbonara é um prato clássico da culinária italiana, originário de Roma. É tradicionalmente feito com massa (geralmente espaguete), ovos, queijo, guanciale e pimenta-do-reino. Um dos principais aspectos desse prato é que o molho é preparado sem creme de leite, utilizando apenas a mistura de ovos e queijo para criar uma textura cremosa.</p>
+                <p>★★★★★</p>
+            </div>
+        </div>
+
+        <div class="ingredientes-preparo">
+            <div class="ingredientes">
+                <h3>INGREDIENTES</h3>
+                <ul>
+                    <li>500g de Spaghetti Barilla</li>
+                    <li>200g de guanciale (papada do porco)</li>
+                    <li>5 gemas de ovo</li>
+                    <li>1 ovo</li>
+                    <li>50g de queijo pecorino romano</li>
+                    <li>70g de queijo parmesão</li>
+                    <li>Sal e pimenta do reino a gosto</li>
+                </ul>
+            </div>
+            <div class="modo-preparo">
+                <h3>MODO DE PREPARO</h3>
+                <ol>
+                    <li>Frite bem o guanciale, até ficar crocante.</li>
+                    <li>Coloque o macarrão para cozinhar em água e sal.</li>
+                    <li>No refratário onde será servido o macarrão, bata bem os ovos com um garfo.</li>
+                    <li>Tempere com sal e pimenta a gosto, e junte o queijo ralado, também a gosto.</li>
+                    <li>Quando o macarrão estiver pronto, escorra e coloque (bem quente) sobre a mistura de ovos, misture bem.</li>
+                    <li>O calor da massa cozinha os ovos.</li>
+                    <li>Coloque o guanciale, ainda quente, sobre o macarrão e sirva.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 A Cantina Esnupi - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

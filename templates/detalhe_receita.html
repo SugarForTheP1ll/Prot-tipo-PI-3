@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Receita</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='receitas_styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/img/imagem_2024-09-29_160851802-removebg-preview.png" alt="Logo">
+            <h1>A <br>
+                    Cantina <br>
+                    Esnupi</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('login') }}">Início</a></li>
+                <li><a href="#">Receitas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="receita-detalhes">
+        <div class="banner">
+            <img src="../static/img/Receitas-de-Yakisoba-conheca-duas-opcoes-Foto-de-um-prato-de-yakisoba-Atacadao.jpg" alt="Imagem da Receita">
+            <div class="receita-info">
+                <h2>Yakisnoopy</h2>
+                <p><i class="far fa-clock"></i> 40 min</p> <br>
+                <p>Yakisoba é um prato popular da culinária japonesa que consiste em macarrão frito (soba) misturado com vegetais, carne (como frango, carne de porco, ou camarão), e um molho especial à base de soja, molho de ostra e outras especiarias. O termo "yakisoba" se traduz literalmente como "macarrão frito". Veja abaixo como preparar esse prato.</p>
+                <p>★★★★★</p>
+            </div>
+        </div>
+
+        <div class="ingredientes-preparo">
+            <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>200 g de macarrão para yakisoba</li>
+                    <li>150 g de peito de frango</li>
+                    <li>2 colheres (sopa) de óleo de gergelim</li>
+                    <li>1/4 de brócolis</li>
+                    <li>1 unidade de cenoura fatiada</li>
+                    <li>1/4 de couve-flor</li>
+                    <li>100 g de pimentão vermelho</li>
+                    <li>1 cebola em pétalas</li>
+                    <li>2 dentes de alho picados</li>
+                    <li>1/2 xícara de shoyu</li>
+                    <li>2 colheres de amido de milho</li>
+                    <li>1 colher (chá) de sal</li>
+                </ul>
+            </div>
+            <div class="modo-preparo">
+                <h3>Modo de Preparo</h3>
+                <ol>
+                    <li>Refogue em uma frigideira o óleo de gergelim e o alho.</li>
+                    <li>Adicione o frango, refogue até dourar.</li>
+                    <li>Adicione os legumes e cozinhe até ficarem macios.</li>
+                    <li>Cozinhe o macarrão separadamente.</li>
+                    <li>Adicione o macarrão na frigideira com os legumes e frango.</li>
+                    <li>Misture o shoyu, sal e amido de milho.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 A Cantina Esnupi - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
