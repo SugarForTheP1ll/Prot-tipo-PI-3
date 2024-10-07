@@ -3,51 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Cantina Esnupi</title>
+    <title>GNC</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='home_styles.css') }}">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../static/img/imagem_2024-09-29_160851802-removebg-preview.png" alt="Logo">
-            <h1>A <br>
-                Cantina <br>
-                Esnupi</h1>
+            <h1> <a href="/home">GNC</a></h1>
         </div>
         <nav>
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#receitas-section">Receitas</a></li>
+                <li><a href="#conteudo">Conteúdo</a></li>
                 <li><a href="/cadastro">Perfil</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
         <section class="banner">
             <div class="logo2">
-                <img src="../static/img/imagem_2024-09-29_160851802-removebg-preview.png" alt="Logo">
-                <h2>A <br>
-                    Cantina <br>
-                    Esnupi</h2>
-                <p>RECEITAS DE QUALIDADE FEITAS COM MUITO AMOR</p>
+                <h2>Bem vindo </h2> <br> <p id="pgnc"> AO GNC </p>
+                <p>UMA CONEXÃO ALÉM DOS PIXELS DAS TELAS</p>
             </div>
-           
-            </section>
-            <section  id="receitas-section" class="receitas">
-                <h2>Receitas de Hoje</h2>
-                <div class="receita-container">
-                    <div class="receita">
-                        <img src="../static/img/cb5051204f4a4525c8b013c16418ae2904e737b7.avif" alt="Receita 1">
-                        <p><a href="/carbonara">Espaguete Carbonara</a></p>
-                    </div>
-                    <div class="receita">
-                        <img src="../static/img/Receitas-de-Yakisoba-conheca-duas-opcoes-Foto-de-um-prato-de-yakisoba-Atacadao.jpg" alt="Receita 2">
-                    <p><a href="/receita">YakiEsnupi</a></p>
-                    </div>
-                </div>
-            </section>
+        </section>
+
+        <section id="conteudo" class="conteudo">
+            <h2>O QUE DESEJA LER HOJE?</h2>
+            <div class="conteudo-container">
+                <!-- Card 1 -->
+                <a href="/Vida Digital" class="card">
+                    <img src="../static/imgs/vida_digital.png" alt="Vida Digital">
+                    <div class="card-title">Vida Digital</div>
+                </a>
+                <!-- Card 2 -->
+                <a href="/video-jogos" class="card">
+                    <img src="../static/imgs/728px-What_video_game(1).png" alt="Vídeo Jogos">
+                    <div class="card-title">Vídeo Jogos</div>
+                </a>
+            </div>
+        </section>
+        
+        
     </main>
 
     <footer>

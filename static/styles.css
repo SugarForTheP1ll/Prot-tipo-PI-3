@@ -25,7 +25,7 @@
 }
 
 .loginBody {
-    background-image: url('img/cb5051204f4a4525c8b013c16418ae2904e737b7.avif');
+    background-image: url('imgs/pexels-lulizler-3165335.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -36,7 +36,7 @@
 
 
 .cadastroBody {
-    background-image: url('img/cb5051204f4a4525c8b013c16418ae2904e737b7.avif');
+    background-image: url('imgs/pexels-lulizler-3165335.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -52,7 +52,7 @@
 }
 
 .login-box {
-    background-color: #f1ebe5;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
     text-align: left;
@@ -69,12 +69,12 @@
     font-family: 'Hero-Bold', sans-serif;
     text-align: left;
     font-size: 13px;
-    color: #423f32;
+    color: #000000;
 }
 
 .logo h1 {
     font-size: 24px;
-    color: #423f32;
+    color: #000000;
     font-family: 'Reborn', sans-serif;
     display: inline-block; 
     vertical-align: top;
@@ -102,7 +102,7 @@ input {
 
 button {
     padding: 12px;
-    background-color: #769d64;
+    background-color: #6f649d;
     color: white;
     border: none;
     border-radius: 5px;
@@ -115,12 +115,12 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #2f2188;
 }
 
 .cdbutton{
     padding: 12px;
-    background-color: #769d64;
+    background-color: #504af2;
     color: white;
     border: none;
     border-radius: 5px;
@@ -133,12 +133,12 @@ button:hover {
 }
 
 .cdbutton:hover {
-    background-color: #218838;
+    background-color: #936ced;
 }
 
 
 a {
-    color: #28a745;
+    color: #504af2;
     text-decoration: none;
 }
 

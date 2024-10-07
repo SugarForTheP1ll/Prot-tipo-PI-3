@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 
 app = Flask(__name__)
-app.secret_key = 'sua_chave_secreta'
+
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -17,7 +17,7 @@ def login():
     return render_template('login.html')
 
 
-@app.route('/sucesso')
+@app.route('/home')
 def sucesso():
     return render_template('home.html')
 
@@ -38,16 +38,6 @@ def cadastro():
         return redirect(url_for('login'))  
 
     return render_template('cadastro.html')
-
-
-@app.route('/receita')
-def receita():
-    return render_template('detalhe_receita.html')
-
-
-@app.route('/carbonara')
-def carbonara():
-    return render_template('detalhe_carbonara.html')
 
 
 if __name__ == '__main__':
