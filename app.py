@@ -39,6 +39,11 @@ def cadastro():
 
     return render_template('cadastro.html')
 
+@app.route('/tecnologia')
+def tec():
+    return render_template('tecnologia.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
