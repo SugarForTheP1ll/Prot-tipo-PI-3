@@ -196,34 +196,33 @@ header nav ul li a:hover {
 
 
 .Sobre{
-    margin-top: 55px;
     background-color: #e1dede;
-    padding-bottom: 350px;
+    text-align: left;   
+    padding: 60px;
+    flex-direction: column;
+    
 }
 
 .Sobre h1{
     font-size: 36px;
     margin-bottom: 40px;
-    font-family: 'Hero-Light', sans-serif;
     text-align: left;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding: 50px, 45px;
 }
 
-.texto2{
-    display: flex;
-    font-family: 'Hero-Light' sans-serif;
-    text-align: left;
-    padding-left: 55px;
-    font-size: 26px;
+.Texto2{
+    gap: 20px;
+    font-size: 20px;
+}
+
+.Sobre *{
+    font-family: 'Hero-Light', sans-serif;
 }
 
 .footer {
-    margin-top: 100px;
     background-color: rgba(0, 0, 0, 0);
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 40px 20px;
-    text-align: left;
     font-family: 'Hero-Light', sans-serif;
     position: relative;
 }
@@ -235,7 +234,7 @@ header nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #374092;
+    background-color: #6857bb;
     z-index: -1;
 }
 
@@ -252,7 +251,7 @@ header nav ul li a:hover {
 .footer-section p {
     font-size: 20px;
     margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 1);
 }
 
 .social-icons {
@@ -267,6 +266,10 @@ header nav ul li a:hover {
     object-fit: contain;
     filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
+}
+
+.social-icons a {
+    text-decoration: none;
 }
 
 .social-icons a img:hover {
@@ -286,9 +289,10 @@ header nav ul li a:hover {
 }
 
 .contact-info a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 16px;
+    transition: transform 0.7;    
 }
 
 .contact-info a:hover {
