@@ -151,11 +151,15 @@ header nav ul li a:hover {
     font-family: 'Hero-Light', sans-serif;
     text-align: justify;
     margin: 0;
+    margin-right: 70px;
+    margin-left: 70px;
 }
 
 .imagem-direita, .imagem-esquerda {
     width: 20%; 
     height: auto;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 /* Responsividade */
@@ -249,4 +253,12 @@ header nav ul li a:hover {
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+.espaco-entre-paragrafos{
+    margin-top: 20px; 
+}
+
+.textinup{
+    margin-bottom: 20px;
 }

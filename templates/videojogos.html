@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video Games</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='videojogos.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="/home">GNC</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Início</a></li>
+                <li><a href="#conteudo">Conteúdo</a></li>
+                <li><a href="/cadastro">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="logo2">
+            <h2>O MUNDO DOS</h2> 
+            <br> 
+            <p id="pgnc">VIDEO-GAMES</p>
+        </div>
+    </section>
+
+    <section id="conteudo" class="conteudo">
+        <h2>OS GAMERS</h2>
+        <div class="item-conteudo">
+            <img src="../static/imgs/jogs1.png" alt="vida digital" class="imagem-direita">
+            <p class="texto-esquerda">
+                Gamers são pessoas que jogam jogos interativos, principalmente videogames, por um período considerável de tempo. A definição de "gamer" é ampla e abrange desde jogadores casuais que dedicam pouco tempo aos jogos até jogadores profissionais que competem em torneios. O termo "gamer" surgiu inicialmente no contexto de jogos de RPG de mesa, nos quais os jogadores assumiam papéis de personagens e criavam narrativas colaborativamente. Com o avanço tecnológico e a popularização dos videogames, o termo passou a ser associado principalmente a jogadores de videogame, sejam eles profissionais ou amadores. Existem diferentes tipos de gamers, que se diferenciam pela dedicação, habilidade e tipo de jogo que preferem. Os gamers casuais jogam por diversão, sem grande comprometimento, enquanto os gamers hardcore dedicam grande parte do seu tempo aos jogos, buscando aprimorar suas habilidades e competir em alto nível. Há também os jogadores "mid-core", que se encontram em um nível intermediário de dedicação. A cultura gamer é rica e diversificada, abrangendo diferentes comunidades e estilos de jogo. Os gamers se conectam por meio de plataformas online, redes sociais e eventos presenciais, compartilhando experiências, estratégias e paixão pelos jogos. O cenário gamer também movimenta uma grande indústria, com desenvolvimento de jogos, produção de hardware, organização de eventos e transmissões ao vivo. Ser gamer vai além de simplesmente jogar; envolve uma identidade, uma comunidade e um estilo de vida.
+
+            </p>
+        </div>
+    
+        <h2 class="Texto2">VIDEO GAMES</h2>
+        <div class="item-conteudo item-conteudo-invertido">
+            <img src="/static/imgs/jogs2.png" alt="Imagem relacionada à saúde" class="imagem-esquerda">
+            <div class="texto-direita"> <p class="textinup">Gamers são pessoas que jogam jogos interativos, principalmente videogames, por um período considerável de tempo. A definição de "gamer" é ampla e abrange desde jogadores casuais que dedicam pouco tempo aos jogos até jogadores profissionais que competem em torneios. O termo "gamer" surgiu inicialmente no contexto de jogos de RPG de mesa, nos quais os jogadores assumiam papéis de personagens e criavam narrativas colaborativamente. Com o avanço tecnológico e a popularização dos videogames, o termo passou a ser associado principalmente a jogadores de videogame, sejam eles profissionais ou amadores. Existem diferentes tipos de gamers, que se diferenciam pela dedicação, habilidade e tipo de jogo que preferem. Os gamers casuais jogam por diversão, sem grande comprometimento, enquanto os gamers hardcore dedicam grande parte do seu tempo aos jogos, buscando aprimorar suas habilidades e competir em alto nível. Há também os jogadores "mid-core", que se encontram em um nível intermediário de dedicação. A cultura gamer é rica e diversificada, abrangendo diferentes comunidades e estilos de jogo. Os gamers se conectam por meio de plataformas online, redes sociais e eventos presenciais, compartilhando experiências, estratégias e paixão pelos jogos. O cenário gamer também movimenta uma grande indústria, com desenvolvimento de jogos, produção de hardware, organização de eventos e transmissões ao vivo. Ser gamer vai além de simplesmente jogar; envolve uma identidade, uma comunidade e um estilo de vida.</p>
+            </div>
+        </div>
+
+        <h2>E-SPORTS</h2>
+        <div class="item-conteudo">
+            <img src="../static/imgs/jogs3.png" alt="Comunidades" class="imagem-direita">
+            <p class="texto-esquerda">
+                Os E-Sports são competições de jogos eletrônicos em que jogadores profissionais competem individualmente ou em equipe. Esses eventos abrangem diversos gêneros de jogos, como arenas online (MOBA), jogos de tiro em primeira pessoa (FPS) e jogos de estratégia em tempo real (RTS), entre outros. Os E-Sports ganharam popularidade e se tornaram um mercado lucrativo, com premiações em dinheiro e patrocínios. A expansão da internet impulsionou esse crescimento, permitindo a formação de redes globais de jogadores e espectadores. A audiência de transmissões ao vivo (livestreams) e E-Sports tem apresentado um aumento constante. Entre 2020 e 2021, houve um crescimento de 22% na audiência, e de 2021 para 2022, um aumento de 16,3%. Com base nesses dados, projeta-se que, em 2025, a audiência dos E-Sports alcance 1,4126 bilhão de espectadores, representando um aumento de mais de 50% em relação a 2022.
+            </p>
+        </div>
+    </section>
+
+    <!-- API -->
+    <section id="comments" class="conteudo">
+        <h2>Deixe seus Comentários</h2>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href; 
+                this.page.identifier = window.location.pathname; 
+            };
+            (function() { 
+                var d = document, s = d.createElement('script');
+                s.src = 'https://SEU_SHORTNAME.disqus.com/embed.js'; 
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Ative o JavaScript para ver os comentários fornecidos pelo Disqus.</noscript>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h2>Nos siga em nossas redes sociais</h2>
+            <p>Saiba mais sobre nós nas redes sociais</p>
+            <div class="social-icons">
+                <a href="#"><img src="../imgs/instagram-removebg.png" alt="Instagram"></a>
+                <a href="#"><img src="../imgs/facebook.png.png" alt="Facebook"></a>
+                <a href="#"><img src="../imgs/pngwing.com.png" alt="𝕏"></a>
+                <a href="#"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-section">
+            <h2>Fale Conosco</h2>
+            <p>Entre em contato por e-mail</p>
+            <div class="contact-info">
+                <img src="../imgs/Design_sem_nome__1_-removebg-preview.png" alt="E-mail">
+                <a href="mailto:gameconnection@gmail.com">gameconnection@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

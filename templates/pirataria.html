@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirataria Digital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='pirataria.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="/home">GNC</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Início</a></li>
+                <li><a href="#conteudo">Conteúdo</a></li>
+                <li><a href="/cadastro">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="logo2">
+            <h2>O QUE É</h2> 
+            <br> 
+            <p id="pgnc">PIRATARIA DIGITAL</p>
+        </div>
+    </section>
+
+    <section id="conteudo" class="conteudo">
+        <h2>O QUE É PIRATARIA DIGITAL?</h2>
+        <div class="item-conteudo">
+            <img src="../static/imgs/pirata1.png" alt="vida digital" class="imagem-direita">
+            <p class="texto-esquerda">
+                A pirataria digital, que consiste na distribuição e acesso não autorizado a conteúdos protegidos por direitos autorais, é uma prática globalmente difundida e cotidiana na internet. Ela é frequentemente enquadrada como um comportamento desviante e ilegal devido aos seus impactos negativos nas indústrias baseadas em direitos autorais, como música, cinema, literatura e videojogos.
+            </p>
+        </div>
+    
+        <h2 class="Texto2">QUAIS OS SEUS RISCOS</h2>
+        <div class="item-conteudo item-conteudo-invertido">
+            <img src="/static/imgs/piratariav2.png" alt="Imagem relacionada à saúde" class="imagem-esquerda">
+            <div class="texto-direita"> <p class="textinup">A pirataria digital oferece riscos significativos para o usuário. Baixar conteúdo ilegal expõe seu computador a vírus e programas maliciosos que podem roubar seus dados e danificar seu aparelho. Além disso, você pode ser exposto a conteúdo impróprio e seu computador pode apresentar problemas de funcionamento, como lentidão e travamentos, devido a softwares piratas que não oferecem suporte ou atualizações. A pirataria também é crime, com consequências legais.
+            </p>
+            </div>
+        </div>
+
+        <h2>COLOCAR ALGUM OUTRO TOPICO RELACIONADO</h2>
+        <div class="item-conteudo">
+            <img src="../static/imgs/pirata3.png" alt="Comunidades" class="imagem-direita">
+            <p class="texto-esquerda">
+                O fenômeno da pirataria digital é analisado dentro de uma perspectiva sociológica e das ciências da comunicação, que considera suas múltiplas facetas e consequências. Embora seja geralmente vista como uma prática ilegal, a pirataria também desempenha um papel significativo como meio informal de mediação e circulação cultural. Ela proporciona acesso a muitos conteúdos midiáticos e recursos digitais que, de outra forma, poderiam ser inacessíveis para outras pessoas devido a barreiras financeiras ou geográficas.
+            </p>
+        </div>
+    </section>
+
+    <!-- API -->
+    <section id="comments" class="conteudo">
+        <h2>Deixe seus Comentários</h2>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href; 
+                this.page.identifier = window.location.pathname; 
+            };
+            (function() { 
+                var d = document, s = d.createElement('script');
+                s.src = 'https://SEU_SHORTNAME.disqus.com/embed.js'; 
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Ative o JavaScript para ver os comentários fornecidos pelo Disqus.</noscript>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h2>Nos siga em nossas redes sociais</h2>
+            <p>Saiba mais sobre nós nas redes sociais</p>
+            <div class="social-icons">
+                <a href="#"><img src="../imgs/instagram-removebg.png" alt="Instagram"></a>
+                <a href="#"><img src="../imgs/facebook.png.png" alt="Facebook"></a>
+                <a href="#"><img src="../imgs/pngwing.com.png" alt="𝕏"></a>
+                <a href="#"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-section">
+            <h2>Fale Conosco</h2>
+            <p>Entre em contato por e-mail</p>
+            <div class="contact-info">
+                <img src="../imgs/Design_sem_nome__1_-removebg-preview.png" alt="E-mail">
+                <a href="mailto:gameconnection@gmail.com">gameconnection@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

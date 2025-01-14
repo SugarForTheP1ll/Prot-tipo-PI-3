@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GNC</title>
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='home_styles.css') }}">
 </head>
 <body>
@@ -32,41 +33,60 @@
         <section id="conteudo" class="conteudo">
             <h2>O QUE DESEJA LER HOJE?</h2>
             <div class="conteudo-container">
-                <a href="/Vida Digital" class="card">
+                <a href="/vidadigital" class="card">
                     <img src="../static/imgs/vida_digital.png" alt="Vida Digital">
                     <div class="card-title">VIDA DIGITAL</div>
                 </a>
-                <a href="/video-jogos" class="card">
-                    <img src="../static/imgs/728px-What_video_game(1).png" alt="Vídeo Jogos">
-                    <div class="card-title">VÍDEO-JOGOS</div>
+                <a href="/videojogos" class="card">
+                    <img src="../static/imgs/728px-What_video_game(1).png" alt="Vídeo Games">
+                    <div class="card-title">VÍDEO-GAMES</div>
                 </a>
                 <a href="/comunidades" class="card">
                     <img src="../static/imgs/wallpapersden.com_asus-rog-4k-digital-life_wxl.jpg" alt="Tecnologia">
                     <div class="card-title">COMUNIDADES VIRTUAIS</div>
                 </a>
-                <a href="/inovacao" class="card">
-                    <img src="../static/imgs/apple.jpg" alt="Inovação">
-                    <div class="card-title">INOVAÇÃO</div>
+                <a href="/pirata" class="card">
+                    <img src="../static/imgs/pirataria.jpg" alt="Pirataria Digital">
+                    <div class="card-title">PIRATARIA DIGITAL</div>
+
                 </a>
             </div>
         </section>
-        
 
         <section class="Sobre">
-            <h1>
-                SOBRE O GNC
-            </h1>
+            <h1>SOBRE O GNC</h1>
             <div class="section-container">
                 <p class="Texto2">
-                    O GNC é uma comunidade de pessoas que se conectam através da tecnologia lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor, dolor non faucibus pretium, ex lorem porttitor nisi, ac pellentesque elit lorem eget arcu. Proin in semper ipsum. Vestibulum vestibulum lobortis consectetur. Vivamus vehicula dignissim rhoncus. Ut dui nisl, ultricies non viverra eu, imperdiet a sem. Donec velit lectus, consectetur ut diam a, iaculis ornare nulla. Nullam faucibus hendrerit ante ac pulvinar. Vestibulum posuere metus ac vulputate consectetur. Phasellus viverra diam et dui aliquet commodo. Vivamus facilisis dignissim tortor finibus varius. Sed bibendum aliquam posuere. In sed aliquet enim, pellentesque porta ligula. Maecenas blandit augue ut lacus cursus dictum. In quis vulputate metus, consequat aliquet elit. Curabitur suscipit dictum orci a venenatis. In hac habitasse platea dictumst. Quisque gravida varius tortor et pharetra. In faucibus lacus id ante posuere dignissim. Sed eu ligula vitae magna eleifend aliquet. Fusce tempus, massa a vehicula facilisis, lacus orci convallis eros, ac ornare justo arcu nec augue.
+                    Criamos este site como parte do trabalho do Projeto Integrador do IFC Campus Concórdia. Nossa proposta é oferecer aos leitores quatro leituras distintas, todas com uma escrita leve e acessível, pensada para proporcionar uma experiência agradável e enriquecedora. Cada uma dessas propostas de leitura foi cuidadosamente desenvolvida para explorar diferentes perspectivas e interpretações do tema central abordado em nosso artigo: “Existe uma relação entre o uso de jogos online e a vida digital na saúde mental dos jovens: Impactos negativos e positivos?”
                 </p>
+                <h1></h1>
+                <p class="Texto2">
+                    O Discord se tornou uma das plataformas mais populares para comunidades online, oferecendo uma maneira fácil e eficiente de se conectar, interagir e colaborar com pessoas de todo o mundo. Com seus canais de texto e voz, além de uma interface simples e intuitiva, o Discord proporciona um ambiente dinâmico e versátil para jogos, estudos, grupos de interesse e muito mais. Por este motivo criamos um bot para o Discord ele foi desenvolvido para automatizar tarefas essenciais de moderação, como a filtragem de conteúdo inadequado, a gestão de membros e a aplicação de regras de forma eficiente e sem a necessidade de intervenção constante dos moderadores. Isso não só alivia a carga de trabalho da equipe, como também assegura que as regras sejam aplicadas de maneira consistente e justa para todos.</p>
+                <p class="Texto2">Clicando no link abaixo você pode adicionar o nosso bot ao seu servidor totalmente grátis: </p><a class="linkdc" href="https://discord.com/oauth2/authorize?client_id=1095673270973513788&scope=applications.commands%20bot&permissions=8">Adicionar bot ao meu servidor</a>
+                </div>
             </div>
-
-
-
         </section>
-        
-        
+        <section class="criadores">
+            <h1>MEMBROS DO PROJETO</h1>
+                <div class="membros">
+                    <div class="membro">
+                        <img src="/static/imgs/ariel-andrin.png" alt="Ariel Andrin">
+                        <p>Ariel Andrin</p>
+                    </div>
+                    <div class="membro">
+                        <img src="/static/imgs/joao-lerner.png" alt="João P. Lerner">
+                        <p>João P. Lerner</p>
+                    </div>
+                    <div class="membro">
+                        <img src="/static/imgs/jovana-orlovski.png" alt="Jovana Orlovski">
+                        <p>Jovana Orlovski</p>
+                    </div>
+                    <div class="membro">
+                        <img src="/static/imgs/matteo-thome.png" alt="Matteo Thomé">
+                        <p>Matteo Thomé</p>
+                    </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -74,10 +94,7 @@
             <h2>Nos siga em nossas redes sociais</h2>
             <p>Saiba mais sobre nós nas redes sociais</p>
             <div class="social-icons">
-                <a href="#"><img src="../imgs/instagram-removebg.png" alt="Instagram"></a>
-                <a href="#"><img src="../imgs/facebook.png.png" alt="Facebook"></a>
-                <a href="#"><img src="../imgs/pngwing.com.png" alt="𝕏"></a>
-                <a href="#"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="/static/imgs/x-social-media-logo-icon.png" alt="𝕏"></a>
             </div>
         </div>
         <hr>
@@ -85,9 +102,10 @@
             <h2>Fale Conosco</h2>
             <p>Entre em contato por e-mail</p>
             <div class="contact-info">
-                <img src="../imgs/Design_sem_nome__1_-removebg-preview.png" alt="E-mail">
-                <a href="mailto:gameconnection@gmail.com">gameconnection@gmail.com</a>
-      
+                <img src="/static/imgs/gmail.png" alt="E-mail">
+                <a href="mailto:gameconnection9@gmail.com">gameconnection9@gmail.com</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
