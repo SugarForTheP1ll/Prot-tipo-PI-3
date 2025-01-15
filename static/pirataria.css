@@ -163,25 +163,24 @@ header nav ul li a:hover {
     margin-right: 70px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .item-conteudo, .item-conteudo-invertido {
-        flex-direction: column; /* Imagem e texto empilham em telas menores */
+        flex-direction: column; 
         text-align: center;
     }
 
     .imagem-direita, .imagem-esquerda {
-        width: 80%; /* Imagens maiores em telas pequenas */
+        width: 80%; 
     }
 
     .texto-esquerda, .texto-direita {
-        width: 100%; /* Textos ocupam toda a largura */
+        width: 100%; 
     }
 }
 
 
 
-/* Footer */
+
 .footer {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(0, 0, 0);

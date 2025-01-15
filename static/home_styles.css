@@ -257,8 +257,8 @@ header nav ul li a:hover {
 
 .membros {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Define duas colunas */
-    gap: 30px; /* Espaçamento entre os elementos */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
     margin-top: 40px;
     text-align: center;
     justify-items: center;
@@ -271,23 +271,23 @@ header nav ul li a:hover {
 }
 
 .membro img {
-    width: 200px; /* Fotos maiores */
+    width: 200px; 
     height: 200px;
-    border-radius: 50%; /* Formato circular */
+    border-radius: 50%; 
     object-fit: cover;
     margin-bottom: 15px;
-    border: 2px solid #ffffff; /* Borda ao redor da imagem */
+    border: 2px solid #ffffff; 
     transition: transform 0.3s ease;
 }
 
 .membro img:hover {
     transform: scale(1.1);
-    border: 2px solid #101861; /* Efeito de zoom ao passar o mouse */
+    border: 2px solid #101861; 
 }
 
 .membro p {
     font-family: 'Hero-Regular', sans-serif;
-    font-size: 20px; /* Texto maior */
+    font-size: 20px; 
     color: #ffffff;
     margin-top: 5px;
 }
@@ -381,7 +381,6 @@ header nav ul li a:hover {
 }
 
 
-/* Responsividade geral */
 @media (max-width: 1200px) {
     .conteudo-container {
         grid-template-columns: repeat(2, 1fr);
@@ -393,7 +392,7 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    /* Ajuste no header */
+
     header {
         flex-direction: column;
         padding: 20px;
